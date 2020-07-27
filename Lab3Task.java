@@ -13,8 +13,8 @@ public class Lab3Task {
     public static final String DISCOUNT_CODE = "CoVid19";
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String clientInputDiscountCode = scanner.nextLine();
+        Scanner scannerObject = new Scanner(System.in);
+        String clientInputDiscountCode = scannerObject.nextLine();
         if (clientInputDiscountCode.isBlank() || clientInputDiscountCode.isEmpty()) {
             System.out.println("The coupon code cannot be blank or empty.");
         } else if (clientInputDiscountCode.equalsIgnoreCase(DISCOUNT_CODE)) {
