@@ -15,6 +15,7 @@ public class Lab3Task {
     public static void main(String[] args) {
         Scanner scannerObject = new Scanner(System.in);
         String clientInputDiscountCode = scannerObject.nextLine();
+        scannerObject.close();
         if (clientInputDiscountCode.isBlank() || clientInputDiscountCode.isEmpty()) {
             System.out.println("The coupon code cannot be blank or empty.");
         } else if (clientInputDiscountCode.equalsIgnoreCase(DISCOUNT_CODE)) {
